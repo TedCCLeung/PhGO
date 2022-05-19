@@ -48,7 +48,7 @@ heatmap_GO <- function(
   input_matrix <- log(df_p, 10)*-1
   input_matrix <- input_matrix[rownames(input_matrix) != "dummy", sort(colnames(input_matrix)) %>% sort_double_abc()]
   column_split_vec <- strsplit(colnames(input_matrix), split = "\\.") %>% sapply(magrittr::extract2, 1)
-  colnames(input_matrix) <- strsplit(colnames(input_matrix), split = "\\.") %>% sapply(tail, 1)
+  colnames(input_matrix) <- strsplit(colnames(input_matrix), split = "\\.") %>% sapply(utils::tail, 1)
 
 
   ht <- ComplexHeatmap::Heatmap(

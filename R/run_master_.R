@@ -1,9 +1,5 @@
 if (FALSE){
 
-  library(tidyverse)
-  library(ComplexHeatmap)
-  library(clusterProfiler)
-
   out_path <- "/Users/TedCCLeung/Documents/Projects/Photoperiod/2_analysis/2_pipeline/PhotoperiodGO/set2/"
 
   small_cluster_filter <- 40

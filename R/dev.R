@@ -8,6 +8,7 @@
 # usethis::use_package("rlang")
 # usethis::use_package("utils")
 # usethis::use_package("circlize")
+# usethis::use_package("extrafont")
 
 
 # Bioconductor -----------------------------------

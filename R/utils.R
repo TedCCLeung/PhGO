@@ -20,7 +20,7 @@ str_detect_multiple <- function(
 
 sort_double_abc <- function(x, split = "\\."){
 
-  x1 <- strsplit(x, split = split) %>% sapply(head, 1)
+  x1 <- strsplit(x, split = split) %>% sapply(utils::head, 1)
   x2 <- strsplit(x, split = split) %>% sapply(magrittr::extract, 2)
 
   final <- lapply(unique(x1), function(y){

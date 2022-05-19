@@ -3,7 +3,6 @@
 #' @importFrom magrittr %>%
 #'
 #' @param geneList A list of gene identifiers in TAIR gene identifiers
-#' @param simplify_cutoff Numeric. Similarity cutoff for simplifying GO terms
 #'
 #' @return Named numeric vector
 
