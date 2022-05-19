@@ -1,4 +1,7 @@
-#' @format Data frame
+#' Date frame with DEI data
+#'
+#'  @format Data frame
+#'
 #' \describe{
 #'  \item{ID}{Gene identifier}
 #'  \item{DEI_EQ}{Daily expression integral in equinox photoperiod}
@@ -8,6 +11,8 @@
 "DEI_table"
 
 
+#' Data frame
+#'
 #' @format Data frame
 #' \describe{
 #'  \item{TAIR}{TAIR_ID}
@@ -16,7 +21,9 @@
 "ID_table"
 
 
+#' List of photoperiodic clusters
 #' @format List of list
+#'
 "photoperiodic_clusters"
 
 

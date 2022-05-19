@@ -23,14 +23,14 @@ run_GSEA_GO <- function(
   grDevices::dev.off()
 
   grDevices::pdf(paste0(dir, "/go_eqld.pdf"), width = 3.5, height = 2.5)
-  clusterProfiler::ridgeplot(gseGO_EQLD %>% dplyr::filter(str_detect_multiple(Description, terms_to_filter)),
+  clusterProfiler::ridgeplot(gseGO_EQLD %>% dplyr::filter(str_detect_multiple(.data$Description, terms_to_filter)),
                              orderBy = "NES", showCategory = 10, core_enrichment = FALSE) +
     ggplot2::scale_fill_steps(low = "#FF0000", high = "#0000FF", guide = ggplot2::guide_colorbar(reverse=TRUE), name = "p.adjust", limits=c(0.0, 0.8)) +
     theme_Prism()
   grDevices::dev.off()
 
   grDevices::pdf(paste0(dir, "/go_sdeq.pdf"), width = 3.5, height = 2.5)
-  clusterProfiler::ridgeplot(gseGO_SDEQ %>% dplyr::filter(str_detect_multiple(Description, terms_to_filter)),
+  clusterProfiler::ridgeplot(gseGO_SDEQ %>% dplyr::filter(str_detect_multiple(.data$Description, terms_to_filter)),
                              orderBy = "NES", showCategory = 10, core_enrichment = FALSE) +
     ggplot2::scale_fill_steps(low = "#FF0000", high = "#0000FF", guide = ggplot2::guide_colorbar(reverse=TRUE), name = "p.adjust", limits=c(0.0, 0.8)) +
     theme_Prism()
